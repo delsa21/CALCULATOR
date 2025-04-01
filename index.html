@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Calculadora</h1>
+    <!--Contenedor Principal-->
+    <div class="container-cal">
+      <div class="screen">
+        <span id="operation"></span>
+      </div>
+
+      <!--row de botones 7, 8, 9-->
+      <div class="container-btn">
+        <!--7, 8, 9-->
+        <div class="button" onclick="addNumber(7)">7</div>
+        <div class="button" onclick="addNumber(8)">8</div>
+        <div class="button" onclick="addNumber(9)">9</div>
+        <div class="button" onclick="addNumber('+')">+</div>
+        
+      </div>
+      <!--row de botones 4, 5, 6-->
+      <div class="container-btn">
+        <!--4, 5, 6-->
+        <div class="button" onclick="addNumber('4')">4</div>
+        <div class="button" onclick="addNumber('5')">5</div>
+        <div class="button" onclick="addNumber('6')">6</div>
+        <div class="button" onclick="addNumber('*')">x</div>
+      </div>
+      <!--row de botones 1, 2, 3-->
+      <div class="container-btn">
+        <!--1, 2, 3-->
+        <div class="button" onclick="addNumber(1)">1</div>
+        <div class="button" onclick="addNumber(2)">2</div>
+        <div class="button" onclick="addNumber(3)">3</div>
+        <div class="button" onclick="addNumber('-')">-</div>
+        
+      </div>
+
+      <div class="container-btn">
+        <div class="button" onclick="addNumber(0)">0</div>
+        <div class="button" onclick="addNumber('/')">/</div>
+        <div class="button" onclick="addNumber('**')">^</div>
+        <div class="button" onclick="addNumber('=')">=</div>
+        
+      </div>
+      <div class="container-btn">
+        <div class="button" onclick="clearAll()">CA</div>
+      </div>
+
+      <h3>Historial</h3>
+      <div id="history"></div>
+
+  </body>
+
+  <script src="script.js"></script>
+</html>
